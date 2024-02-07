@@ -43,6 +43,8 @@ public:
             if (fuel_type == fuel) {
                 cout << left << setw(15) << model_name << setw(10) << fuel_type << setw(15) << showroom_price << setw(10) << Mileage << setw(15) << transmission << setw(30) << tank_capacity << setw(10) << seating << setw(10) << Airbag << endl;
             }
+            else
+                cout >> "error please enter valid detail.";
         }
 
     
