@@ -5,7 +5,7 @@ using namespace std;
 
 class data {
 private:
-    string model_name, fuel_type, Airbag, Tank_capacity, transmission;
+    string model_name, fuel_type, Airbag, transmission;
     float showroom_price, Mileage, tank_capacity;
     int seating;
 
@@ -38,13 +38,25 @@ public:
         cout << left << setw(15) << model_name << setw(10) << fuel_type << setw(15) << showroom_price << setw(10) << Mileage << setw(15) << transmission << setw(30) << tank_capacity << setw(10) << seating << setw(10) << Airbag << endl;
     }
 
+    void getmodelname(string model) {
+
+            if(model_name == model) {
+                cout << left << setw(15) << model_name << setw(10) << fuel_type << setw(15) << showroom_price << setw(10) << Mileage << setw(15) << transmission << setw(30) << tank_capacity << setw(10) << seating << setw(10) << Airbag << endl;
+
+            }
+            
+            else
+                cout <<"enter valid model name";
+        }
+
     void getFuelType(string fuel) {
     
             if (fuel_type == fuel) {
                 cout << left << setw(15) << model_name << setw(10) << fuel_type << setw(15) << showroom_price << setw(10) << Mileage << setw(15) << transmission << setw(30) << tank_capacity << setw(10) << seating << setw(10) << Airbag << endl;
             }
-            else
-                cout >> "error please enter valid detail.";
+            else {
+                cout <<"emter valid option" ;
+            }
         }
 
     
